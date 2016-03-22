@@ -1,0 +1,125 @@
+fileFormatVersion: 2
+guid: bf9608ad792c22e4998cc23218618c5b
+timeCreated: 1458623426
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprites popeyer_0
+    21300002: Sprites popeyer_1
+    21300004: Sprites popeyer_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprites popeyer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 242
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 115}
+        - {x: -76, y: 115}
+        - {x: -90, y: 86}
+        - {x: -90, y: 44}
+        - {x: -74, y: 41}
+        - {x: -78, y: -66}
+        - {x: -69, y: -115}
+        - {x: -61, y: -121}
+        - {x: 76, y: -121}
+        - {x: 83, y: -83}
+        - {x: 83, y: 42}
+        - {x: 65, y: 86}
+    - name: Sprites popeyer_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 0
+        width: 242
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21, y: 115}
+        - {x: -88, y: 115}
+        - {x: -91, y: 106}
+        - {x: -91, y: 21}
+        - {x: -83, y: -21}
+        - {x: -34, y: -121}
+        - {x: 34, y: -121}
+        - {x: 53, y: -81}
+        - {x: 74, y: -27}
+        - {x: 74, y: 104}
+    - name: Sprites popeyer_2
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 242
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 66, y: 88}
+        - {x: 7, y: 115}
+        - {x: -47, y: 115}
+        - {x: -65, y: 113}
+        - {x: -83, y: 82}
+        - {x: -83, y: 49}
+        - {x: -77, y: -119}
+        - {x: -68, y: -121}
+        - {x: 21, y: -121}
+        - {x: 66, y: -115}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
