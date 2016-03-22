@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: fb0029069073b6448b0727906b43069e
+timeCreated: 1458681042
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sprites fofao_0
+    21300002: Sprites fofao_1
+    21300004: Sprites fofao_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Sprites fofao_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 242
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90, y: 60}
+        - {x: 71, y: 102}
+        - {x: 42, y: 115}
+        - {x: -43, y: 115}
+        - {x: -80, y: 85}
+        - {x: -91, y: 55}
+        - {x: -91, y: -16}
+        - {x: -90, y: -39}
+        - {x: -83, y: -80}
+        - {x: -66, y: -121}
+        - {x: 50, y: -121}
+        - {x: 74, y: -119}
+        - {x: 63, y: -65}
+        - {x: 89, y: -37}
+        - {x: 90, y: -19}
+    - name: Sprites fofao_1
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 0
+        width: 242
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70, y: 101}
+        - {x: 42, y: 115}
+        - {x: -43, y: 115}
+        - {x: -80, y: 85}
+        - {x: -91, y: 67}
+        - {x: -91, y: -31}
+        - {x: -90, y: -41}
+        - {x: -68, y: -53}
+        - {x: -34, y: -121}
+        - {x: 42, y: -121}
+        - {x: 87, y: -39}
+        - {x: 90, y: -17}
+        - {x: 90, y: 65}
+    - name: Sprites fofao_2
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 242
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90, y: 70}
+        - {x: 70, y: 101}
+        - {x: 42, y: 115}
+        - {x: -43, y: 115}
+        - {x: -80, y: 85}
+        - {x: -91, y: 63}
+        - {x: -91, y: -84}
+        - {x: -68, y: -114}
+        - {x: -62, y: -121}
+        - {x: -21, y: -121}
+        - {x: 70, y: -115}
+        - {x: 68, y: -60}
+        - {x: 90, y: -29}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
