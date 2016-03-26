@@ -5,10 +5,13 @@ public class GameOver : MonoBehaviour {
 
 	public static int comensaldamorte;
 	public GameObject gameover;
+	public static bool continuePontuando;
+	public GameObject restart;
 
 	// Use this for initialization
 	void Start () {
-	
+		continuePontuando = true;
+		comensaldamorte = 0;
 	}
 	
 	// Update is called once per frame
@@ -17,6 +20,7 @@ public class GameOver : MonoBehaviour {
 			Debug.Log ("GameOver");
 			Invoke("gameOver", 2);
 			comensaldamorte++;
+			continuePontuando = false;
 		}
 
 	}
@@ -25,6 +29,7 @@ public class GameOver : MonoBehaviour {
 		GameObject screen;
 
 		screen = Instantiate (gameover) as GameObject;
+		restart.SetActive (true);
 	}
 		
 

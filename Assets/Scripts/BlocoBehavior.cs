@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BlocoBehavior : MonoBehaviour {
 
-	public float speed;
+
 	public float x;
 
 
@@ -19,13 +19,13 @@ public class BlocoBehavior : MonoBehaviour {
 	void Update () {
 
 		x = transform.position.x;
-		x += speed * Time.deltaTime;
+		x += -MovieOffset.speedCenario - 0.02f;
 		transform.position = new Vector3 (x, transform.position.y, transform.position.z);
 
 		if (x <= -16.2f) {
 			Destroy (transform.gameObject);
 		}
-		if (MovieOffset.speedCenario >= 0.25f) {
+		/*if (MovieOffset.speedCenario >= 0.25f) {
 			speed = -13;
 		}
 		if (MovieOffset.speedCenario >= 0.30f) {
@@ -38,17 +38,17 @@ public class BlocoBehavior : MonoBehaviour {
 			speed = -16;
 		}
 		if (MovieOffset.speedCenario >= 0.45f) {
-			speed = -17;
+			speed = -20;
 		}
 		if (MovieOffset.speedCenario >= 0.50f) {
-			speed = -18;
+			speed = -23;
 		}
 		if (MovieOffset.speedCenario >= 0.55f) {
-			speed = -19;
+			speed = -27;
 		}
 		if (MovieOffset.speedCenario >= 0.70f) {
-			speed = -22;
-		}
+			speed = -33;
+		}*/
 
 
 	}

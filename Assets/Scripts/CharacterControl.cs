@@ -14,6 +14,11 @@ public class CharacterControl : MonoBehaviour {
 	public Transform ground;
 	public bool delay;
 	public bool delaymain;
+	public AudioSource audioFofao;
+	public AudioSource audioPopeyer;
+	public AudioSource audioPalhaco;
+	public AudioClip audiojump;
+	public AudioClip audioCrash;
 
 
 
@@ -58,6 +63,7 @@ public class CharacterControl : MonoBehaviour {
 			jumpTime = jumpDelay;
 			jumped = true;
 			delaymain = true;
+			GetComponent<AudioSource>().GetComponent<AudioSource> ().Instead (audiojump);
 
 		}
 

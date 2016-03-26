@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: 53c959274569e8b48ad8ecdc2afa788c
+timeCreated: 1458939881
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Menu HUD_0
+    21300002: Menu HUD_1
+    21300004: Menu HUD_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Menu HUD_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 335
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 164.5, y: -83.5}
+        - {x: 167.5, y: -76.5}
+        - {x: 167.5, y: 76.5}
+        - {x: 164.5, y: 83.5}
+        - {x: 156.5, y: 91.5}
+        - {x: 149.5, y: 94.5}
+        - {x: -148.5, y: 94.5}
+        - {x: -157.5, y: 90.5}
+        - {x: -163.5, y: 84.5}
+        - {x: -167.5, y: 75.5}
+        - {x: -167.5, y: -74.5}
+        - {x: -163.5, y: -83.5}
+        - {x: -156.5, y: -89.5}
+        - {x: -154.5, y: -91.5}
+        - {x: -149.5, y: -93.5}
+        - {x: -143.5, y: -94.5}
+        - {x: 149.5, y: -94.5}
+        - {x: 156.5, y: -91.5}
+    - name: Menu HUD_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 155
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71.5, y: 75}
+        - {x: -77.5, y: 67}
+        - {x: -77.5, y: -65}
+        - {x: -75.5, y: -70}
+        - {x: -69.5, y: -75}
+        - {x: 71.5, y: -75}
+        - {x: 77.5, y: -68}
+        - {x: 77.5, y: 70}
+        - {x: 71.5, y: 75}
+    - name: Menu HUD_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 156
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -77, y: 75}
+        - {x: -78, y: 73}
+        - {x: -78, y: -66}
+        - {x: -75, y: -71}
+        - {x: -70, y: -75}
+        - {x: 72, y: -75}
+        - {x: 78, y: -68}
+        - {x: 78, y: 75}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

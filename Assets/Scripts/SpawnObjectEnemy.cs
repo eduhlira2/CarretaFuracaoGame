@@ -19,7 +19,7 @@ public class SpawnObjectEnemy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		InvokeRepeating ("SpawnEnemy", 5, 2.5f);
+		InvokeRepeating ("SpawnEnemy", 5, 3);
 
 	}
 	
@@ -32,7 +32,7 @@ public class SpawnObjectEnemy : MonoBehaviour {
 	void SpawnEnemy(){
 
 							
-	 inimigo= Random.Range (1, 4);
+	 inimigo= Random.Range (1, 3);
 
 		GameObject obj;
 
