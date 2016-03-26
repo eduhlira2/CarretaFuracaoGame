@@ -18,7 +18,7 @@ public class CharacterControl : MonoBehaviour {
 	public AudioSource audioPopeyer;
 	public AudioSource audioPalhaco;
 	public AudioClip audiojump;
-	public AudioClip audioCrash;
+
 
 
 
@@ -63,7 +63,7 @@ public class CharacterControl : MonoBehaviour {
 			jumpTime = jumpDelay;
 			jumped = true;
 			delaymain = true;
-			GetComponent<AudioSource>().GetComponent<AudioSource> ().Instead (audiojump);
+			audioFofao.GetComponent<AudioSource> ().PlayOneShot(audiojump);
 
 		}
 
@@ -98,14 +98,14 @@ public class CharacterControl : MonoBehaviour {
 void palhaco(){
 	delay = true;
 	player2.GetComponent<Rigidbody2D>().AddForce(transform.up * force);
-
+	audioPalhaco.GetComponent<AudioSource> ().PlayOneShot(audiojump);
 	Invoke ("Delay", 0.9f);
 
 	}
 void popeyer(){
 	delay = true;
 	player3.GetComponent<Rigidbody2D>().AddForce(transform.up * force);
-
+	audioPopeyer.GetComponent<AudioSource> ().PlayOneShot(audiojump);
 	Invoke ("Delay", 0.9f);
 
 }

@@ -9,6 +9,8 @@ public class MorteMickey : MonoBehaviour {
 	private Animator animator;
 	public Transform camera;
 	private bool tremer = true;
+	public AudioSource audioFofao;
+	public AudioClip audioCrash;
 
 	// Use this for initialization
 	void Start () {
@@ -41,6 +43,7 @@ public class MorteMickey : MonoBehaviour {
 
 	void InstanciarVikingsMortos()
 	{
+		audioFofao.GetComponent<AudioSource> ().PlayOneShot(audioCrash);
 		int randX, RandY;
 		GameObject _viking1 = GameObject.Instantiate (charMorto, transform.position, transform.rotation) as GameObject;
 

@@ -14,6 +14,11 @@ public class CharacterController2 : MonoBehaviour {
 	public Transform ground;
 	public bool delay;
 	public bool delaymain;
+	public AudioSource audioMickey;
+	public AudioSource audioCapitao;
+
+	public AudioClip audiojump;
+	public AudioClip audioCrash;
 
 
 	// Use this for initialization
@@ -65,6 +70,7 @@ public class CharacterController2 : MonoBehaviour {
 			player.GetComponent<Rigidbody2D>().AddForce(transform.up * force);
 			jumpTime = jumpDelay;
 			jumped = true;
+			audioMickey.GetComponent<AudioSource> ().PlayOneShot(audiojump);
 
 
 		}
@@ -83,7 +89,6 @@ public class CharacterController2 : MonoBehaviour {
 	if (delay == false){
 
 		Invoke ("palhaco", 0.1f);
-		Invoke ("popeyer", 0.1f);
 
 	}
 }
@@ -91,7 +96,7 @@ public class CharacterController2 : MonoBehaviour {
 void palhaco(){
 	delay = true;
 	player2.GetComponent<Rigidbody2D>().AddForce(transform.up * force);
-
+	audioCapitao.GetComponent<AudioSource> ().PlayOneShot(audiojump);
 	Invoke ("Delay", 0.9f);
 
 }

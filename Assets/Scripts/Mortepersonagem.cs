@@ -10,6 +10,8 @@ public class Mortepersonagem : MonoBehaviour {
 	private Animator animator;
 	public Transform camera;
 	private bool tremer = true;
+	public AudioSource audioFofao;
+	public AudioClip audioCrash;
 
 	// Use this for initialization
 	void Start () {
@@ -30,9 +32,12 @@ public class Mortepersonagem : MonoBehaviour {
 		}*/
 
 		if(col.gameObject.tag == "car"){
+
+		
 		Debug.Log("Bateu");
-		Player.SetActive (false);
+		
 		InstanciarVikingsMortos ();
+			Player.SetActive (false);
 		animator.SetTrigger("Treme");
 		Invoke ("ParaTremer", 0.5f);
 		tremer = true;
@@ -42,6 +47,7 @@ public class Mortepersonagem : MonoBehaviour {
 
 	void InstanciarVikingsMortos()
 	{
+		audioFofao.GetComponent<AudioSource> ().PlayOneShot(audioCrash);
 		int randX, RandY;
 		GameObject _viking1 = GameObject.Instantiate (charMorto, transform.position, transform.rotation) as GameObject;
 

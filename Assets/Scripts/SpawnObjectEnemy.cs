@@ -6,6 +6,8 @@ public class SpawnObjectEnemy : MonoBehaviour {
 
 	public GameObject barreiraPrefab;
 	public GameObject barreiraPrefab2;
+	public GameObject barreiraPrefab3;
+
 	public  static float rateSpawn;
 	public float currentTime;
 	private int posicao;
@@ -32,7 +34,7 @@ public class SpawnObjectEnemy : MonoBehaviour {
 	void SpawnEnemy(){
 
 							
-	 inimigo= Random.Range (1, 3);
+	 inimigo= Random.Range (1, 5);
 
 		GameObject obj;
 
@@ -45,6 +47,10 @@ public class SpawnObjectEnemy : MonoBehaviour {
 		case 2:
 			obj = Instantiate (barreiraPrefab2) as GameObject;
 			break;
+		case 3:
+			obj = Instantiate (barreiraPrefab3) as GameObject;
+			break;
+		
 	    }
     }
 }
