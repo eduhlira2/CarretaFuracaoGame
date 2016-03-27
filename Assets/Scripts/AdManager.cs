@@ -11,7 +11,7 @@ public class AdManager : MonoBehaviour {
 	}
 
 	public void ShowAd(){
-		if (Advertisement.IsReady ()) {
+		if (Advertisement.IsReady () && GameOver.adOn == true) {
 			Debug.Log ("Olha o AD aew");
 		Advertisement.Show ();
 		

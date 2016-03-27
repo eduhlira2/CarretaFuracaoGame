@@ -7,11 +7,15 @@ public class GameOver : MonoBehaviour {
 	public GameObject gameover;
 	public static bool continuePontuando;
 	public GameObject restart;
+	public GameObject menu;
+	public static bool adOn;
+	public static int contAnuncio;
 
 	// Use this for initialization
 	void Start () {
 		continuePontuando = true;
 		comensaldamorte = 0;
+		adOn = false;
 	}
 	
 	// Update is called once per frame
@@ -21,15 +25,23 @@ public class GameOver : MonoBehaviour {
 			Invoke("gameOver", 2);
 			comensaldamorte++;
 			continuePontuando = false;
+
+		}
+		if (PlayerPrefs.GetInt ("Anunciar") == 3) {
+			PlayerPrefs.SetInt ("Anunciar", 1);
+			contAnuncio = 0;
+			Debug.Log ("ContAnuncio Zerou!!!!");
+			adOn = true;
 		}
 
 	}
 	void gameOver(){
-
+		contAnuncio = contAnuncio + 1;
 		GameObject screen;
-
+		PlayerPrefs.SetInt ("Anunciar", contAnuncio );
 		screen = Instantiate (gameover) as GameObject;
 		restart.SetActive (true);
+		menu.SetActive (true);
 	}
 		
 

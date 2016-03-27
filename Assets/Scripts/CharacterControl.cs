@@ -67,7 +67,7 @@ public class CharacterControl : MonoBehaviour {
 
 		}
 
-		if (gameObject.name == ("Control_Right") && isGrounded && !jumped) {
+		/*if (gameObject.name == ("Control_Right") && isGrounded && !jumped) {
 
 			player.GetComponent<Rigidbody2D>().AddForce(transform.up * force);
 			jumpTime = jumpDelay;
