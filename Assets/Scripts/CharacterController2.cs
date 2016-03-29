@@ -16,9 +16,9 @@ public class CharacterController2 : MonoBehaviour {
 	public bool delaymain;
 	public AudioSource audioMickey;
 	public AudioSource audioCapitao;
-
 	public AudioClip audiojump;
 	public AudioClip audioCrash;
+	private bool timecontrol;
 
 
 	// Use this for initialization
@@ -30,7 +30,9 @@ public class CharacterController2 : MonoBehaviour {
 	void Update () {
 
 		isGrounded = Physics2D.Linecast (this.transform.position, ground.position, 1 << LayerMask.NameToLayer ("Plataforma2"));
-
+		if (isGrounded == true && !timecontrol) {
+			jumped = false;
+		}
 	}
 
 	/*void JumpCharacter()
@@ -65,11 +67,13 @@ public class CharacterController2 : MonoBehaviour {
 
 	}*/
 
-		if (gameObject.name == ("Control_Right") && isGrounded && !jumped) {
+		if (isGrounded && !jumped) {
 
 			player.GetComponent<Rigidbody2D>().AddForce(transform.up * force);
 			jumpTime = jumpDelay;
 			jumped = true;
+			timecontrol = true;
+			Invoke ("Delayer", 0.2f);
 			audioMickey.GetComponent<AudioSource> ().PlayOneShot(audiojump);
 
 
@@ -104,6 +108,10 @@ void palhaco(){
 
 void Delay(){
 	delay = false;
+}
+
+void Delayer(){
+	timecontrol=false;
 }
 
 }

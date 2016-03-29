@@ -18,6 +18,7 @@ public class CharacterControl : MonoBehaviour {
 	public AudioSource audioPopeyer;
 	public AudioSource audioPalhaco;
 	public AudioClip audiojump;
+	private bool timecontrol;
 
 
 
@@ -31,7 +32,9 @@ public class CharacterControl : MonoBehaviour {
 	void Update () {
 	
 		isGrounded = Physics2D.Linecast (this.transform.position, ground.position, 1 << LayerMask.NameToLayer ("Plataforma"));
-
+		if (isGrounded == true && !timecontrol) {
+			jumped = false;
+		}
 	}
 
 	/*void JumpCharacter()
@@ -57,14 +60,14 @@ public class CharacterControl : MonoBehaviour {
 	{
 		//Time.timeScale = 1;
 
-		if (gameObject.name == ("Control_Left") && isGrounded && !jumped) {
+		if (isGrounded && !jumped) {
 
 			player.GetComponent<Rigidbody2D>().AddForce(transform.up * force);
 			jumpTime = jumpDelay;
 			jumped = true;
-			delaymain = true;
+			timecontrol = true;
+			Invoke ("Delayer", 0.2f);
 			audioFofao.GetComponent<AudioSource> ().PlayOneShot(audiojump);
-
 		}
 
 		/*if (gameObject.name == ("Control_Right") && isGrounded && !jumped) {
@@ -84,15 +87,21 @@ public class CharacterControl : MonoBehaviour {
 		jumpTime -= 1;
 
 
-			if (jumpTime <= 0 && isGrounded && jumped) {
-				jumped = false;
-			}
-	if (delay == false){
+//			if (//jumpTime <= 0 && isGrounded && jumped) {
+//				jumped = false;
+//			}
+	if (delay == false && player == true && player3 == true ){
 
 		Invoke ("palhaco", 0.2f);
 		Invoke ("popeyer", 0.1f);
 
 	   }
+	if (delay == false && player == false && player3 == false ){
+			Debug.Log ("Soh o plahaco");
+			Invoke ("palhaco", 0.05f);
+
+	}
+
     }
 
 void palhaco(){
@@ -114,6 +123,8 @@ void Delay(){
 		delay = false;
 	}
 
-
+void Delayer(){
+	timecontrol=false;
+}
 
 }

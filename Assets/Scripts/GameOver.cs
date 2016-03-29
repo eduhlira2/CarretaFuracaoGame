@@ -7,6 +7,7 @@ public class GameOver : MonoBehaviour {
 	public GameObject gameover;
 	public static bool continuePontuando;
 	public GameObject restart;
+	public GameObject fundoGO;
 	public GameObject menu;
 	public static bool adOn;
 	public static int contAnuncio;
@@ -27,7 +28,7 @@ public class GameOver : MonoBehaviour {
 			continuePontuando = false;
 
 		}
-		if (PlayerPrefs.GetInt ("Anunciar") == 3) {
+		if (PlayerPrefs.GetInt ("Anunciar") == 2) {
 			PlayerPrefs.SetInt ("Anunciar", 1);
 			contAnuncio = 0;
 			Debug.Log ("ContAnuncio Zerou!!!!");
@@ -42,6 +43,7 @@ public class GameOver : MonoBehaviour {
 		screen = Instantiate (gameover) as GameObject;
 		restart.SetActive (true);
 		menu.SetActive (true);
+		fundoGO.SetActive (true);
 	}
 		
 

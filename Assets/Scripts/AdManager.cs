@@ -7,7 +7,7 @@ public class AdManager : MonoBehaviour {
 	[SerializeField] string gameID = "1052313";
 
 	void Awake(){
-	Advertisement.Initialize (gameID, true);
+		Advertisement.Initialize (gameID, false );
 	}
 
 	public void ShowAd(){
